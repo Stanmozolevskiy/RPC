@@ -1,0 +1,22 @@
+.user-image{
+    max-width: 80%;
+    height: auto;
+    display: block; 
+    margin: 0 auto;
+}
+.button-option{
+    max-width: 100%;
+    max-height: auto;
+    margin: 0 auto;
+    text-align:center;
+    display:inline-block;
+}
+.card-body.user{
+    padding: 0 
+}
+.column {
+    width: 33.33%;
+    padding: 5px;
+    height: 33.33%;
+  }
+  

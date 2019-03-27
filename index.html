@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>RPC</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+        <link href="./stylesheet.css" rel="stylesheet">
+        <script
+            src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+
+        <div class='user-interface container' style="margin-top: 60px;">
+            <div class='row'>
+                <!-- User card -->
+                <div class="card col-3" style="width: 18rem;display: flex;">
+                    <img src="./Images/user.png" class="card-img-top user-image"
+                        alt="user image">
+                    <div class="card-body user">
+                        <h5 class="card-title" id='user-name'>User card</h5>
+                        <p class="card-text">Make your chose.</p>
+                        <hr class="my-4">
+                        <div class="row">
+                            <img class="user-button column" alt="paper" id="paper" src="./Images/paper.jpg">
+                            <img class="user-button column" id="rock" alt="rock"  src="./Images/rock.jpg">
+                            <img class="user-button column" id="scisors" alt="scisors"  src="./Images/scissors.jpg">
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Arena -->
+                <div class="col-6">
+                    <div class="jumbotron">
+                        <h1 class="display-5" id="user-name-top"> User vs Computer</h1>
+                        <hr class="my-4">
+                        <p class="lead">User:<a id='userScore'>0</a></p>
+                        <p class="lead">Computer: <a id='computerScore'>0</a></p>
+                        <p  class="lead">Match: <a id='matchScore'>0</a></p>
+                        
+                    </div>
+                </div>
+                <!-- Computer card -->
+                <div class="card col-3" style="width: 18rem;display: flex">
+                    <img src="./Images/Computer.png" class="card-img-top
+                        user-image" alt="computer image">
+                    <div class="card-body ">
+                        <h5 class="card-title">Computer card</h5>
+                        <p class="card-text">Let the odds be ever in your favor human.</p>
+                        <hr class="my-4">
+                        <p id="computer-chose"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
