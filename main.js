@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$().ready(function () {
 
     const submitPaper = $(`#paper`)[0].alt
     const submitRock = $(`#rock`)[0].alt
