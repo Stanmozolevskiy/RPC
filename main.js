@@ -1,5 +1,5 @@
-$(document).ready(function () {
-    //jquery variables
+$().ready(function () {
+
     const submitPaper = $(`#paper`)[0].alt
     const submitRock = $(`#rock`)[0].alt
     const submitScisors = $(`#scisors`)[0].alt
