@@ -1,9 +1,12 @@
 $(document).ready(function () {
-
+    //jquery variables
     const submitPaper = $(`#paper`)[0].alt
     const submitRock = $(`#rock`)[0].alt
     const submitScisors = $(`#scisors`)[0].alt
     const userName = prompt("What is your name?")
+    $("#user-name-top").text(userName + ' vs Computer ')
+    $("#user-name").text(userName)
+
     // main object with all parameters
     const app = {
         computer: {
@@ -39,11 +42,17 @@ $(document).ready(function () {
             }
             if (app.user.userScore === 3) {
                 alert( userName +' won')
+                app.computer.computerScore = 0;
+                app.user.userScore = 0 ;
+                app.match = 0
             }
             if (app.computer.computerScore === 3) {
                 alert("Computer won")
+                app.computer.computerScore = 0;
+                app.user.userScore = 0 ;
+                app.match = 0
             }
-            // update the ui
+            // update the ui in the game
             $("#userScore").text(app.user.userScore)
             $("#computerScore").text(app.computer.computerScore)
             $("#matchScore").text(app.match)
@@ -51,8 +60,6 @@ $(document).ready(function () {
         },
         match: 0,
     }
-    $("#user-name-top").text(userName + ' vs Computer ')
-    $("#user-name").text(userName)
 
     // Event handlers
     $(`#paper`).click((function () {
